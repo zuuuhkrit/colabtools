@@ -1,3 +1,5 @@
+print("Starting colab init")
+
 import os, sys
 import numpy as np
 import pandas as pd
@@ -30,4 +32,4 @@ drive = GoogleDrive(gauth)
 
 from colabtools.gdrive import list_files_for_path
 
-  
+print("Done colab init")  
