@@ -13,7 +13,7 @@ def list_files_for_path(drive, pad=None, silent=True):
     else:
         if not silent:
             print(f"Recursing down started {head}")
-        file_list = list_files_for_path(head)
+        file_list = list_files_for_path(drive, head)
         assert len(file_list) == 1
 
         file_id = file_list[0]["id"]
